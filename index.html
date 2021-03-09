@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Registartion form</title>
+      <meta charset="UTF-8">
+      <!--font-->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <!--bootstrap-->
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+      <link rel="stylesheet" href="index.css">
+   </head>
+</html>
+<body class="bg-dark">
+
+    <!--egistration-->
+
+   <form name="validation" onsubmit="return validateForm()" class="container bg-light">
+      
+      <article class="card-body">
+         <h4 class="card-title text-center">Create Account</h4>
+      </article>
+
+      <div class="form-group input-group">
+         <div class="form-wrapper">
+            <input id="fName" name="name" class="form-control" placeholder="First name" type="text">
+         </div>
+         <div class="form-wrapper">
+            <input id="lName" class="form-control" placeholder="Last name" type="text">
+         </div>
+         <span id="message_name"></span>
+         <span id="message_lName"></span>
+      </div>
+
+      <div class="form-group input-group">
+         <input class="form-control" id="username" placeholder="Username" type="text" value="">
+      </div>
+      <span id="message_username"></span>
+
+      <div class="form-group input-group">
+         <input class="form-control" id="mail" placeholder="Email address" type="text">
+      </div>
+      <span id="message_mail"></span>
+
+      <div class="form-group input-group">
+         <div class="form-wrapper">
+            <input class="form-control" id="pwd1" placeholder="Enter password" type="password">
+         </div>
+         <div class="form-wrapper">
+            <input class="form-control" id="pwd2" placeholder="Confirm password" type="password">
+         </div>
+         <span id="message_pwd1"></span>
+         <span id="message_match"></span>
+      </div>
+
+      <div class="form-group input-group">
+         <div class="form-wrapper">
+            <select id="gender" name="gender" class="form-control">
+               <option value="0">Gender</option>
+               <option value="1">Male</option>
+               <option value="2">Female</option>
+               <option value="3">Other</option>
+            </select>
+         </div>
+         <div class="form-wrapper">
+            <input class="form-control" id="day" placeholder="day" type="number">
+         </div>
+         <div class="form-wrapper">
+            <select id="month" name="month" class="form-control">
+               <option value="0">month</option>
+               <option value="1">Jan</option>
+               <option value="2">Feb</option>
+               <option value="3">Mar</option>
+               <option value="4">Apr</option>
+               <option value="5">May</option>
+               <option value="6">Jun</option>
+               <option value="7">Jul</option>
+               <option value="8">Aug</option>
+               <option value="9">Seq</option>
+               <option value="10">Oct</option>
+               <option value="11">Nov</option>
+               <option value="12">Dec</option>
+            </select>
+         </div>
+         <div class="form-wrapper">
+            <input class="form-control" id="year" placeholder="year" type="number">
+         </div>
+         <span id="message_gender"></span>
+         <span id="message_bornDay"></span>
+         <span id="message_month"></span>
+         <span id="message_bornYear"></span>
+      </div>
+
+      <div class="checkbox">
+         <label>
+         <input type="checkbox" name="checkbox" value="check" required> I caccept the Terms of Use & Privacy Policy."
+         </label>
+      </div>
+
+      <button class="bg-dark">Register Now</button>
+
+   </form>
+
+   <!--Log in -->
+
+   <form class="container bg-light">
+      <article class="card-body text-center">
+         <h4 card-title>Log in</h4>
+      </article>
+      <div class="form-group input-group">
+         <input class="form-control" id="username" placeholder="Username or Email address" type="text">
+      </div>
+      <div class="input-group">
+         <input class="form-control" id="pwd1" placeholder="Enter password" type="password">
+      </div>
+      <a href="#" class="input-group">forgot password</a>
+      <button class="bg-dark">Register Now</button>
+   </form>
+   
+   <script src="index.js"></script>
+</body>
